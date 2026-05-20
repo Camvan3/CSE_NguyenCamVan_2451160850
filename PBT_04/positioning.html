@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Playground</title>
+    <link rel="stylesheet" href="positioning.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">Vanila</div>
+        <nav class="nav-links">
+            <a href="#">Trang chủ</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+    </header>
+
+    <div class="main-layout">
+        
+        <aside class="sticky-sidebar">
+            <h3>Danh Mục</h3>
+            <ul>
+                <li><a href="#">Điện thoại</a></li>
+                <li><a href="#">Máy tính</a></li>
+                <li><a href="#">Phụ kiện</a></li>
+            </ul>
+        </aside>
+
+        <main class="content-area">
+            <h2>Sản Phẩm Nổi Bật</h2>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <span class="badge-hot">HOT</span>
+                    <div class="product-image">📦</div>
+                    <h4>iPhone 15 Pro Max</h4>
+                    <p class="price">29.990.000đ</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">📦</div>
+                    <h4>MacBook Air M3</h4>
+                    <p class="price">27.490.000đ</p>
+                </div>
+                
+                <div class="product-card">
+                    <span class="badge-hot">HOT</span>
+                    <div class="product-image">📦</div>
+                    <h4>Apple Watch Ultra</h4>
+                    <p class="price">19.990.000đ</p>
+                </div>
+            </div>
+
+            <div class="dummy-text">
+                <p>... Cuộn xuống dưới để xem thêm các sản phẩm khác ...</p>
+                <p style="margin-top: 600px;">Thông tin chi tiết về thông số kỹ thuật của sản phẩm.</p>
+                <p style="margin-top: 600px;">Bạn đã cuộn xuống cuối trang!</p>
+            </div>
+        </main>
+    </div>
+
+    <button class="scroll-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+</body>
+</html>
