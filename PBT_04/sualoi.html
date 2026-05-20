@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Giao diện lỗi</title>
+    <style>
+        /* SỬA LỖI 1: Thêm flex dọc cho card và margin-top auto cho nút */
+        .card-container { display: flex; flex-wrap: wrap; }
+        .card { width: 30%; margin: 1.5%; border: 1px solid #000; padding: 10px; display: flex; flex-direction: column; }
+        .card button { margin-top: auto; padding: 10px; }
+        
+        /* SỬA LỖI 2: Thêm justify và align để căn giữa */
+        .hero { height: 200px; background: #ddd; display: flex; justify-content: center; align-items: center; }
+        .hero-content { text-align: center; }
+
+        /* SỬA LỖI 3: Thêm flex-shrink: 0 để sidebar không bị ép co lại */
+        .layout { display: flex; width: 500px; border: 2px solid red; margin-top: 20px; }
+        .sidebar { width: 200px; background: orange; flex-shrink: 0; }
+        .content { flex: 1; background: lightblue; word-break: break-all; }
+    </style>
+</head>
+<body>
+
+    <h1>Hero đã ra giữa</h1>
+    <div class="hero">
+        <div class="hero-content"><h2>NỘI DUNG HERO</h2></div>
+    </div>
+
+    <h1>Nút Mua không bị nhấp nhô</h1>
+    <div class="card-container">
+        <div class="card"><h3>Tên ngắn</h3><button>Mua</button></div>
+        <div class="card"><h3>Tên siêu siêu siêu dài đẩy nút xuống đáy luôn</h3><button>Mua</button></div>
+    </div>
+
+    <h1>Sidebar không bị bóp méo</h1>
+    <div class="layout">
+        <div class="sidebar">Sidebar (Muốn 200px)</div>
+        <div class="content">Content quá dàiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
+    </div>
+
+</body>
+</html>
