@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Landing Page</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 1. NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Vanila</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sản phẩm</a></li>
+                </ul>
+                <form class="d-flex me-2">
+                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm...">
+                    <button class="btn btn-outline-light" type="submit">Tìm</button>
+                </form>
+                <button class="btn btn-primary position-relative">
+                    Giỏ hàng <span class="badge bg-danger">3</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION (CAROUSEL) -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="bg-secondary d-flex align-items-center justify-content-center text-white" style="height: 350px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url() center/cover;">
+                    <div class="carousel-caption">
+                        <h1>Khuyến Mãi Lớn</h1>
+                        <p>Giam giá đặc biệt cho những khách hàng mua với đơn từ 500.000vnd trở nên và được quay vòng xoay may mắn</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="bg-secondary d-flex align-items-center justify-content-center text-white" style="height: 350px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url() center/cover;">
+                    <div class="carousel-caption">
+                        <h1>Slide 2: Bộ Sưu Tập Mới</h1>
+                        <p>Khám phá các sản phẩm vừa cập bến.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="bg-secondary d-flex align-items-center justify-content-center text-white" style="height: 350px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url() center/cover;">
+                    <div class="carousel-caption">
+                        <h1>Slide 3: Giảm Giá 50%</h1>
+                        <p>Áp dụng cho toàn bộ phụ kiện đi kèm.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- 3. PRODUCT GRID -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Sản Phẩm Mới</h2>
+        
+        <!-- Grid: 4 cột desktop (lg-3), 2 cột tablet (md-6), 1 cột mobile (12) -->
+        <div class="row g-4">
+            <!-- Lặp lại 4 Card sản phẩm giống nhau -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 position-relative">
+                    <span class="position-absolute top-0 start-0 badge bg-danger m-2">Sale</span>
+                    <img src="" class="card-img-top" alt="Sản phẩm">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Sản Phẩm 1</h5>
+                        <p class="card-text text-muted small flex-grow-1">Sữa dưỡng thể giúp da trắng sáng và chắc khỏe</p>
+                        <button class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#quickView">Xem nhanh</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 position-relative">
+                    <span class="position-absolute top-0 start-0 badge bg-danger m-2">Sale</span>
+                    <img src="" class="card-img-top" alt="Sản phẩm">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Sản Phẩm 2</h5>
+                        <p class="card-text text-muted small flex-grow-1">Kem chống nắng giúp da tránh xa khỏi tia UV</p>
+                        <button class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#quickView">Xem nhanh</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 position-relative">
+                    <span class="position-absolute top-0 start-0 badge bg-danger m-2">Sale</span>
+                    <img src="" class="card-img-top" alt="Sản phẩm">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Sản Phẩm 3</h5>
+                        <p class="card-text text-muted small flex-grow-1">Cặp dầu gội giúp tóc chắc khỏe, ngăn ngừa gãy rụng</p>
+                        <button class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#quickView">Xem nhanh</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 position-relative">
+                    <span class="position-absolute top-0 start-0 badge bg-danger m-2">Sale</span>
+                    <img src="" class="card-img-top" alt="Sản phẩm">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Sản Phẩm 4</h5>
+                        <p class="card-text text-muted small flex-grow-1">Nước hoa cao cấp mới mang hương thơm của hoa lưu ly</p>
+                        <button class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#quickView">Xem nhanh</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. MODAL (XEM NHANH) -->
+    <div class="modal fade" id="quickView" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Chi Tiết Sản Phẩm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="" class="img-fluid rounded" alt="Chi tiết">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Dầu gội bồ kết</h4>
+                            <p class="text-danger fw-bold">Giá: 500.000đ</p>
+                            <p class="text-muted small">Với chiết xuất từ bồ kết 100% lành tính làm giảm xơ rối, gãy rụng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn class-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. FOOTER (4 Cột Grid) -->
+    <footer class="bg-dark text-white pt-4 pb-2">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5>Về chúng tôi</h5>
+                    <p class="text-muted small">Cửa hàng mỹ phẩm.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5>Chính sách</h5>
+                    <p class="text-muted small">Chính sách bảo hành<br>Chính sách đổi trả</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5>Hỗ trợ</h5>
+                    <p class="text-muted small">Câu hỏi thường gặp<br>Hotline: 1900 00000/p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5>Liên hệ</h5>
+                    <p class="text-muted small">Địa chỉ: Đống Đa, Hà Nội<br>Email: lavanila@shop.com</p>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <p class="text-center text-muted small">&copy; 2026 LogoShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
