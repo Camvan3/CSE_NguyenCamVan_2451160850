@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm - Nguyễn Cẩm Vân</title>
+    <style>
+        /* CSS thay thế thuộc tính border cũ để tránh lỗi trong image_84e897.png */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f8f8;
+        }
+        .centered {
+            text-align: center;
+        }
+        img {
+            max-width: 180px;
+            height: auto;
+        }
+        article {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cửa hàng của Vân</h1>
+        <nav>
+            <ul>
+                <li><a href="profile.html">Trang chủ</a></li>
+                <li><a href="#san-pham">Sản phẩm</a></li>
+                <li><a href="#so-sanh">So sánh</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="san-pham">
+            <h2>Sản phẩm nổi bật</h2>
+            
+            <article>
+                <figure>
+                    <img src="https://shopdunk.com/images/thumbs/0045512_iphone-16-pro-128gb.png" alt="iPhone 16 Pro">
+                </figure>
+                <h3>iPhone 16 Pro</h3>
+                <p>Màn hình siêu sắc nét, chip A18 cực mạnh.</p>
+                <p>Giá: <strong>29.000.000đ</strong></p>
+                <a href="#">Mua ngay</a>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="https://down-vn.img.susercontent.com/file/sg-11134275-821d0-mgqp7mhwdw5k3a@resize_w900_nl.webp" alt="Samsung S24 Ultra">
+                </figure>
+                <h3>Samsung S24 Ultra</h3>
+                <p>Bút S-Pen quyền năng, camera 200MP.</p>
+                <p>Giá: <mark>25.500.000đ</mark></p>
+                <a href="#">Mua ngay</a>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTklO9XPhOTF-CLESem9srD8n5lV7dGpq4_Ew&s" alt="Google Pixel 9">
+                </figure>
+                <h3>Google Pixel 9</h3>
+                <p>Trải nghiệm Android thuần khiết nhất.</p>
+                <p>Giá: <strong>18.000.000đ</strong></p>
+                <a href="#">Mua ngay</a>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="https://product.hstatic.net/1000198144/product/xiaomi_14_ultra_trang_4d6109873bfb4625aebbf5ee8b1887a7_master.jpg" alt="Xiaomi 14 Ultra">
+                </figure>
+                <h3>Xiaomi 14 Ultra</h3>
+                <p>Ống kính Leica chụp ảnh chuyên nghiệp.</p>
+                <p>Giá: <strong>21.000.000đ</strong></p>
+                <a href="#">Mua ngay</a>
+            </article>
+        </section>
+
+        <section id="so-sanh">
+            <h2>Bảng so sánh chi tiết</h2>
+            <!-- Đã xóa border="1" để đạt chuẩn HTML5 xanh sạch -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tiêu chí</th>
+                        <th>iPhone 16 Pro</th>
+                        <th>S24 Ultra</th>
+                        <th>Pixel 9</th>
+                        <th>Xiaomi 14 Ultra</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Màn hình</td>
+                        <td>6.3 inch</td>
+                        <td>6.8 inch</td>
+                        <td>6.3 inch</td>
+                        <td>6.73 inch</td>
+                    </tr>
+                    <tr>
+                        <td>Camera</td>
+                        <td>48MP</td>
+                        <td>200MP</td>
+                        <td>50MP</td>
+                        <td>50MP Leica</td>
+                    </tr>
+                    <tr>
+                        <td>Hệ điều hành</td>
+                        <td>iOS</td>
+                        <td colspan="3" class="centered">Android</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nguyễn Cẩm Vân. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+p { color: gray; } /*(0,0,1)*/
+
+body p { color: silver; } /*(0,0,2)*/
+
+.text { color: blue; } /*(0,1,0)*/
+
+p.text { color: navy; } /*(0,1,1)*/
+
+p[class*="text"] { color: teal; } /*(0,1,1)*/
+
+.text.highlight { color: purple; } /*(0,2,0)*/
+
+#demo { color: orange; } /*(1,0,0)*/
+
+p#demo { color: brown; } /*(1,0,1)*/
+
+#demo.text { color: red; } /*(1,1,0)*/
+
+.highlight { color: green !important; } 
