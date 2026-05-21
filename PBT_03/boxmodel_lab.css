@@ -1,0 +1,47 @@
+.sidebar, .content, .ads {
+    box-sizing: border-box; 
+    float: left;           
+}
+/* --- PHẦN 1 --- */                    
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    float: left;
+    margin-right: 20px;
+    background-color: lightblue;
+}
+.box-content {
+    box-sizing: content-box;
+}
+.box-border {
+    box-sizing: border-box;
+}
+
+/* --- PHẦN 2 --- */
+.container {
+    width: 1000px;
+    border: 2px dashed red;
+    margin: 20px 0;
+    display: flex; 
+    box-sizing: border-box; 
+}
+.column {
+    box-sizing: border-box; 
+}
+.sidebar {
+    width: 250px;
+    background-color: #f0f0f0;
+    padding: 15px;
+}
+.content {
+    width: 500px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.ads {
+    width: 250px;
+    background-color: #f0f0f0;
+    padding: 15px;
+}

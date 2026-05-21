@@ -1,0 +1,42 @@
+.container {
+    width: 960px;
+    margin: 20px 0;
+    background-color: #eee;
+    overflow: hidden; 
+    border: 2px dashed red;
+}
+
+.sidebar {
+    padding: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    background-color: #ffcccc;
+}
+
+.content {
+    padding: 30px;
+    border: 1px solid #ccc;
+    float: left;
+    background-color: #ccffcc;
+}
+
+/*Cách 1: Dùng border box*/
+.fix-border-box .sidebar { 
+    width: 300px; 
+    box-sizing: border-box; 
+    float: left; 
+}
+.fix-border-box .content { 
+    width: 660px; 
+    box-sizing: border-box; 
+    float: left; 
+}
+/*Cách 2: Không dùng border box*/
+.fix-manual .sidebar { 
+    width: 258px; 
+    float : left;
+}
+.fix-manual .content { 
+    width: 598px;
+    float :left; 
+}
