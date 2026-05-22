@@ -1,0 +1,54 @@
+:root {
+    --bs-primary: #14b8a6;        /* Teal 500 */
+    --bs-primary-rgb: 20, 184, 166;
+    --bs-primary-hover: #0d9488;
+    --bs-secondary: #64748b;      /* Slate 500 */
+    --bs-secondary-rgb: 100, 116, 139;
+    --color-primary: var(--bs-primary);
+            /* Typography */
+            --bs-body-font-family: 'Inter', system-ui, sans-serif;
+            --bs-body-font-size: 1rem;
+            --bs-body-line-height: 1.6;
+            /* Border radius */
+            --bs-border-radius: 0.5rem;
+            --bs-border-radius-sm: 0.375rem;
+            --bs-border-radius-lg: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+.py-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* Custom gap for grids */
+.gap-4 { gap: 2rem; }
+/* Make cards rounder */
+.card {
+    border-radius: 16px;
+}
+
+/* Make buttons less rounded */
+.btn {
+    border-radius: 8px;
+}
+.btn-primary:hover {
+    background-color: var(--bs-primary-hover);
+    border-color: var(--bs-primary-hover);
+}
+/* Make inputs more rounded */
+.form-control, .form-select {
+    border-radius: 10px;
+}
+ .navbar {
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+/* Override Bootstrap reboot defaults */
+body {
+    font-family: var(--bs-body-font-family);
+    background-color: #f8fafc;
+    color: #272b31;
+}
