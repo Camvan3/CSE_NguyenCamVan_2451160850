@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Công Việc Cá Nhân</title>
+    <link rel="stylesheet" href="bai2.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>Quản Lý Công Việc Cá Nhân</h1>
+
+        <div id="toast-notification" class="toast hidden"></div>
+
+        <div class="stats-container">
+            <div class="stat-card total">
+                <span class="stat-count" id="total-tasks">0</span>
+                <span class="stat-label">Tổng cộng</span>
+            </div>
+            <div class="stat-card completed">
+                <span class="stat-count" id="completed-tasks">0</span>
+                <span class="stat-label">Đã hoàn thành</span>
+            </div>
+            <div class="stat-card pending">
+                <span class="stat-count" id="pending-tasks">0</span>
+                <span class="stat-label">Chưa hoàn thành</span>
+            </div>
+        </div>
+
+        <div class="action-bar">
+            <button id="btn-open-form" class="btn btn-primary">+ Thêm công việc</button>
+        </div>
+
+        <div id="task-list" class="task-list-container">
+        </div>
+    </div>
+
+    <div id="form-popup" class="popup-overlay hidden">
+        <div class="popup-content">
+            <h3 id="form-title">Thêm Công Việc Mới</h3>
+            <form id="task-form">
+                <input type="hidden" id="task-id">
+
+                <div class="form-group">
+                    <label for="task-title">Tiêu đề công việc <span class="required">*</span></label>
+                    <input type="text" id="task-title" required placeholder="Nhập tiêu đề...">
+                </div>
+
+                <div class="form-group">
+                    <label for="task-desc">Mô tả ngắn</label>
+                    <textarea id="task-desc" rows="3" placeholder="Nhập mô tả ngắn..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="task-deadline">Hạn hoàn thành <span class="required">*</span></label>
+                    <input type="date" id="task-deadline" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="task-priority">Mức ưu tiên</label>
+                    <select id="task-priority">
+                        <option value="Thấp">Thấp</option>
+                        <option value="Trung bình" selected>Trung bình</option>
+                        <option value="Cao">Cao</option>
+                    </select>
+                </div>
+
+                <div class="popup-actions">
+                    <button type="button" id="btn-close-form" class="btn btn-secondary">Hủy</button>
+                    <button type="submit" class="btn btn-primary" id="btn-submit-form">Lưu công việc</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="bai2.js"></script>
+</body>
+</html>
