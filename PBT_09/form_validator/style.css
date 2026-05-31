@@ -1,0 +1,120 @@
+:root {
+    --error-color: #ef4444;
+    --success-color: #22c55e;
+    --warning-color: #eab308;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 { margin-top: 0; text-align: center; color: #333; }
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+.status-icon {
+    position: absolute;
+    right: 10px;
+    font-size: 16px;
+}
+
+.error-msg {
+    color: var(--error-color);
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* Password Strength Meter */
+.strength-meter {
+    height: 6px;
+    background-color: #e5e7eb;
+    border-radius: 3px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0%;
+    transition: all 0.3s ease;
+}
+
+.strength-text {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 4px;
+    display: block;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:disabled {
+    background-color: #cbd5e1;
+    cursor: not-allowed;
+}
+
+/* Modal */
+.modal {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center;
+    opacity: 0; pointer-events: none; transition: opacity 0.3s;
+}
+.modal.show { opacity: 1; pointer-events: auto; }
+.modal-content {
+    background: white; padding: 25px; border-radius: 8px; max-width: 400px; width: 80%;
+    text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+.modal-content h3 { color: var(--success-color); margin-top: 0; }
+.modal-content p { text-align: left; background: #f8fafc; padding: 10px; border-radius: 4px; font-size: 14px; }
