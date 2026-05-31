@@ -1,0 +1,41 @@
+### Bài 1: Component UserProfile
+function UserProfile() {
+    return (
+        <div className="profile"> 
+            <h1>Hồ sơ cá nhân</h1>
+            <img src="" alt="Ảnh đại diện" /> 
+            <table>
+                <tbody> 
+                    <tr>
+                        <td>Họ tên:</td>
+                        <td>Vanila</td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td>vanila@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    );
+}
+
+export default UserProfile;
+
+### Bài 2: Component ProductInfo
+function ProductInfo() {
+    return (
+        <div className="product">
+            <h2>iPhone 15</h2>
+            <p className="price">25.000.000đ</p> {/* class → className */}
+            <ul>
+                <li>Màn hình: 6.1 inch</li>
+                <li>Camera: 48MP</li>
+                <li>Pin: 3349 mAh</li>
+            </ul>
+            <button>Mua ngay</button> 
+        </div>
+    );
+}
+
+export default ProductInfo;
